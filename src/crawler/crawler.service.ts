@@ -65,7 +65,7 @@ export class CrawlerService {
 
     async LinkedinProfile(query?: string): Promise<void> {
         const browser = await puppeteer.launch({
-            headless: false,
+            headless: "new",
             args: [
                 '--no-sandbox',
                 '--disable-setuid-sandbox',
